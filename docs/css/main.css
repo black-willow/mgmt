@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: #e907a9;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -106,7 +106,7 @@ body {
     background: url(../img/showcase.jpeg);
     background: rgba(68, 68, 68, 0.9), url(../img/showcase.jpeg);
     background-attachment: fixed;
-    background-size: cover; } 
+    background-size: cover; }
 
 h1,
 h2,
