@@ -125,7 +125,7 @@ h3 {
     background: rgba(73, 73, 73, 0.5); }
 
 a {
-  color: #FFFFE6;
+  color: #FFF;
   text-decoration: none; }
 
 header {
@@ -134,7 +134,10 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #10c14e; }
+  text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+               1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+
+  color: chartreuse; }
 
 main {
   padding: 4rem;

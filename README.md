@@ -1,11 +1,8 @@
-# Build a Business Site
-I have build a responsive website that will display images. links and description.
+# Black Willow Lawn Care Website
 
-# Files Included
+This is version 1.0 of the BWLC site.
 
-* index.html
-* main.css in css folder
-* Gruntfile.js
-* img folder
-* dist folder
-* package.json
+The overall flow of the site is a progressive web app.
+We wanted the look and feel to be sleek and app like.
+
+
