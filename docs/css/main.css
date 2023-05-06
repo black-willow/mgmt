@@ -104,9 +104,10 @@ body {
   line-height: 1.5; }
   body#bg-img {
     background-image: url(../img/17.jpg);
-    /* background: rgba(68, 68, 68, 0.9), url(../img/17.jpg); */
+    background: rgba(68, 68, 68, 0.9), url(../img/17.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover; }
 
 h1,
