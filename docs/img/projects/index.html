@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #canvas {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas" width="500" height="500"></canvas>
+
+  <script>
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+
+    // Circle properties
+    let x = 250; // initial x position
+    let y = 250; // initial y position
+    const radius = 25;
+    let dx = 2; // x-axis velocity
+    let dy = 2; // y-axis velocity
+
+    function drawCircle() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height); // clear the canvas
+      ctx.beginPath();
+      ctx.arc(x, y, radius, 0, Math.PI * 2);
+      ctx.fillStyle = "red";
+      ctx.fill();
+      ctx.closePath();
+    }
+
+    function updatePosition() {
+      x += dx;
+      y += dy;
+
+      // Reverse direction if the circle hits the boundaries
+      if (x + radius > canvas.width || x - radius < 0) {
+        dx = -dx;
+      }
+      if (y + radius > canvas.height || y - radius < 0) {
+        dy = -dy;
+      }
+    }
+
+    function animate() {
+      updatePosition();
+      drawCircle();
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
+</body>
+</html>
